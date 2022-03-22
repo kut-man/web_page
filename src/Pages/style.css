@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Poppins:wght@700&family=Quicksand:wght@300;600&display=swap);
+
+.home-container {
+    margin-top: 110px !important;
+    height: 1000px;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.background-rect {
+    position: absolute;
+    width: 610px;
+    height: 1000px;
+    left: 0;
+}
+
+.content-container {
+    width: 760px;
+    margin-top: 200px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.content-rect {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 375px;
+    height: 550px;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.content-rect>img {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin: 50px 0 0 0;
+}
+
+.content-rect>h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.line {
+    border: 1px solid black;
+    width: 60px;
+    margin-top: 20px;
+}
+
+.content-rect>h2 {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 30px 0 0 0;
+}
+
+.content-contact {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0 0 0;
+}
+
+.content-contact>ul {
+    padding: 0;
+
+}
+
+.content-contact>ul>li {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    position: relative;
+    width: 360px;
+    height: 900;
+    display: inline-block;
+    float: right;
+}
+
+.content>h1 {
+    display: inline;
+    font-family: poppins-semibold, poppins, sans-serif;
+    font-size: 100px;
+}
+
+.content>h2 {
+    font-family: poppins-semibold, poppins, sans-serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.description {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.content-button>button, .button-container>button {
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 100px;
+    background: transparent;
+    padding: "5px 30px 5px 30px"
+}
+
+.content-button>button:hover, .button-container>button:hover {
+    background: #0050FF;
+    color: #fff;
+}
+
+.slide {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 80px;
+    background-color: rgb(242, 207, 172);
+    top: 20px;
+    animation-name: horizontal-slide;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@keyframes horizontal-slide {
+    50% {
+        width: 260px;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 260px;
+    }
+}
+
+.content-button {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .home-container {
+        height: 1190px;
+    }
+
+    .background-rect {
+        top: 500px;
+        width: 100vw;
+        height: 800px;
+        left: 0;
+        right: 0;
+    }
+
+    .content-container {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        margin-top: 50px;
+    }
+
+    .content-rect>h2 {
+        display: none;
+    }
+
+    .button-container {
+        display: none;
+    }
+
+    .content-button {
+        display: inline-block !important;
+    }
+}
+
+/* ------------------------------ Projects --------------------------------- */
+
+.projects, .resume, .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(230, 218, 206);
+}
+
+.title {
+    top: 2000px;
+    margin-top: 110px;
+    padding-top: 100px;
+    font-size: 40px;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.something {
+    width: 700px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.something>p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.project-containers {
+    width: 730px;
+    height: 360px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.project-containers>div {
+    background-color: blue;
+    width: 10px;
+    height: 50px !important;
+    height: 50px;
+    margin-top: 100px;
+}
+
+/* ------------------------------ Resume --------------------------------- */
+
+.experience, .education {
+    float: left;
+    font-size: 25px;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+.download {
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    border-radius: 100px;
+    background: #0050FF;
+    height: 40px;
+    width: 170px;
+    color: white;
+    border: none;
+    float: right;
+    margin-top: 100px;
+}
+
+.skillset {
+    width: 730px;
+    height: 560px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+/* ------------------------------ Contact --------------------------------- */
+
+.contact > div:nth-child(2) {
+    width: 70vw;
+    height: 700px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    width: 40vw;
+    height: 480px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.contact-form>* {
+    margin-bottom: 20px;
+}
