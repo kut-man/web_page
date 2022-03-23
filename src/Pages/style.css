@@ -256,20 +256,51 @@
 /* ------------------------------ Contact --------------------------------- */
 
 .contact > div:nth-child(2) {
-    width: 70vw;
-    height: 700px;
+    width: 80vw;
+    max-width: 1000px;
+    height: 600px;
     background-color: white;
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
 .contact-form {
-    width: 40vw;
+    width: 60vw;
+    max-width: 600px;
     height: 480px;
     margin: auto;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.contact-form>* {
-    margin-bottom: 20px;
+.name-container {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+.first-name-input, .last-name-input{
+    width: 20vw;
+    max-width: 250px;
+}
+
+.email-input, .subject-input, .message-text{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .name-container {
+        flex-direction: column;
+    }
+    .first-name-input, .last-name-input{
+        width: 100%;
+    }
+    .first-name-input{
+        margin-bottom: 30px;
+    }
 }

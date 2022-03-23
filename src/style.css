@@ -140,6 +140,15 @@ a {
         transition: 1s;
     }
 
+    .resume-container{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .resume-container>*{
+        margin: 0 !important;
+    }
+
     .list-container>ul {
         display: flex;
         flex-direction: column;

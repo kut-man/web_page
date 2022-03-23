@@ -10,7 +10,7 @@ export default function Resume() {
     return (
         <div className="resume">
             <div className="title"> <FontAwesomeIcon icon={faSquareFull} color="blue" /> Resume </div>
-            <div style={{ width: "730px", height: "200px" }}>
+            <div style={{ width: "90vw", maxWidth: "730px", height: "200px" }}>
                 <p className="experience" style={{ marginTop: "100px" }}>Experince</p>
                 <button className="download">DOWNLOAD CV</button>
             </div>
