@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Tile(date, name, position, location) {
+export default function Tile(date, name, position, location, description) {
     return (
         <div className="resume-container">
             <span className='duration'>
@@ -10,7 +10,7 @@ export default function Tile(date, name, position, location) {
                 <h6>{location}</h6>
             </span>
             <span className='duration-description'>
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                {description}
             </span>
         </div>
     )

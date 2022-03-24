@@ -172,6 +172,10 @@ a {
     .copyright {
         margin: 0 0 30px 10px !important;
     }
+    .duration-description {
+        align-items: start !important;
+    }
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -222,7 +226,7 @@ a {
 .resume-container {
     max-width: 730px;
     width: 90vw;
-    height: 360px;
+    height: auto;
     background-color: white;
     margin-bottom: 40px;
     display: flex;
@@ -245,6 +249,7 @@ a {
 .duration>h3 {
     font-family: poppins-semibold, poppins, sans-serif;
     font-size: 20px;
+    color: blue;
 }
 
 .duration>h4 {
@@ -264,10 +269,11 @@ a {
 }
 
 .duration-description {
-    width: 400px;
-    height: 200px;
+    width: 90%;
+    height: auto;
     float: right;
     margin-right: 50px;
     display: flex;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
