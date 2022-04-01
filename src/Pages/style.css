@@ -2,7 +2,7 @@
 
 .home-container {
     margin-top: 110px !important;
-    height: 1000px;
+    height: 600px;
     width: 100vw;
     display: inline-flex;
     justify-content: center;
@@ -209,7 +209,8 @@
 }
 
 .something {
-    width: 700px;
+    max-width: 700px;
+    width: 70vw;
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -258,6 +259,11 @@
 }
 
 .project-containers>img {
+    width: 360px;
+    object-fit: cover;
+}
+
+.project-containers>video {
     width: 360px;
     object-fit: cover;
 }
