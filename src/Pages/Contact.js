@@ -3,6 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareFull } from '@fortawesome/free-solid-svg-icons'
 import emailjs from 'emailjs-com';
 
+const style = {
+    border: '1px solid black',
+    borderRadius: '100px',
+    background: 'transparent',
+    padding: "5px 30px 5px 30px"
+}
+
 export default function Contact() {
 
     const sendEmail = (e) => {
@@ -52,7 +59,7 @@ export default function Contact() {
                     <textarea className='message-text'  name='message'></textarea>
                 
 
-                <input type="submit" value="Send" />
+                <input style={style} type="submit" value="Send" />
 
             </div>
         </div>

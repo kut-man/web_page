@@ -4,9 +4,9 @@ import { faSquareFull } from '@fortawesome/free-solid-svg-icons'
 import Tile from '../components/Tile'
 
 export default function Resume() {
-    const tile1 = Tile('2021-2022', "Freelancer", "Weblancer", "Online", "I got several projects to do. I concluded that freelancing is not for me.");
-    const tile2 = Tile('2015-2020', "Manas-Ata", "Secondary School", "Talas, Kyrgyzstan", "I studied in Manas-Ata high school for five years, these five years were a wonderful and happy part of my life. Education was in English, simultaneously we learned Turkish, Russian and Kyrgyz languages. I was in ICT club but and learned nothing from there :)");
-    const tile3 = Tile('2022-Present', "Vistula University", "Bachelors", "Warsaw, Poland", "I am studying now and everything is great! Teachers make emphasize mostly on Microsoft products like C#, SSMS, Visual Studio and etc.");
+    const tile1 = Tile('2021-2022', "Freelancer", "Weblancer", "Online", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus eleifend leo ut pulvinar. Morbi efficitur posuere malesuada. Aenean venenatis rutrum nulla, et mollis justo fermentum hendrerit.");
+    const tile2 = Tile('2015-2020', "Manas-Ata", "Secondary School", "Talas, Kyrgyzstan", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus eleifend leo ut pulvinar. Morbi efficitur posuere malesuada. Aenean venenatis rutrum nulla, et mollis justo fermentum hendrerit.");
+    const tile3 = Tile('2022-Present', "Vistula University", "Bachelors", "Warsaw, Poland", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus eleifend leo ut pulvinar. Morbi efficitur posuere malesuada. Aenean venenatis rutrum nulla, et mollis justo fermentum hendrerit.");
     return (
         <div className="resume">
             <div className="title"> <FontAwesomeIcon icon={faSquareFull} color="blue" /> Resume </div>
@@ -49,7 +49,7 @@ export default function Resume() {
                         </div>
                         <div>
                             <p><FontAwesomeIcon icon={faSquareFull} color="blue" />English (proficient)</p>
-                            <p><FontAwesomeIcon icon={faSquareFull} color="blue" />Turkish (proficient)</p>
+                            <p><FontAwesomeIcon icon={faSquareFull} color="blue" />Polish (beginner)</p>
                         </div>
                     </div>
                 </div>
