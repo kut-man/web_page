@@ -4,9 +4,9 @@ import { faSquareFull } from '@fortawesome/free-solid-svg-icons'
 import Tile from '../components/Tile'
 
 export default function Resume() {
-    const tile1 = Tile('2021-2022', "Freelancer", "Weblancer", "Online", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus eleifend leo ut pulvinar. Morbi efficitur posuere malesuada. Aenean venenatis rutrum nulla, et mollis justo fermentum hendrerit.");
-    const tile2 = Tile('2015-2020', "Manas-Ata", "Secondary School", "Talas, Kyrgyzstan", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus eleifend leo ut pulvinar. Morbi efficitur posuere malesuada. Aenean venenatis rutrum nulla, et mollis justo fermentum hendrerit.");
-    const tile3 = Tile('2022-Present', "Vistula University", "Bachelors", "Warsaw, Poland", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus eleifend leo ut pulvinar. Morbi efficitur posuere malesuada. Aenean venenatis rutrum nulla, et mollis justo fermentum hendrerit.");
+    const tile1 = Tile('2021-2022', "Freelancer", "Weblancer", "Online");
+    const tile2 = Tile('2015-2020', "Manas-Ata", "Secondary School", "Talas, Kyrgyzstan");
+    const tile3 = Tile('2022-Present', "Vistula University", "Bachelors", "Warsaw, Poland");
     return (
         <div className="resume">
             <div className="title"> <FontAwesomeIcon icon={faSquareFull} color="blue" /> Resume </div>

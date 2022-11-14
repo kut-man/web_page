@@ -96,7 +96,8 @@ body {
 
 .burger.animation .rec-1 {
     background-color: black;
-    transform: rotateZ(45deg) translate(10px, 7px);;
+    transform: rotateZ(45deg) translate(10px, 7px);
+    ;
     transition: 0.5s;
 }
 
@@ -141,12 +142,12 @@ a {
         transition: 1s;
     }
 
-    .resume-container{
+    .resume-container {
         flex-wrap: wrap;
         justify-content: center !important;
     }
 
-    .resume-container>*{
+    .resume-container>* {
         margin: 0 !important;
     }
 
@@ -173,10 +174,11 @@ a {
     .copyright {
         margin: 0 0 30px 10px !important;
     }
+
     .duration-description {
         align-items: start !important;
     }
-    
+
 }
 
 @media only screen and (max-width: 500px) {

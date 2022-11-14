@@ -10,7 +10,7 @@ export default function Home() {
             <div className="background-rect" style={{ backgroundColor: "rgb(230, 218, 206)" }}></div>
 
             <div className='content-container'>
-                
+
 
                 <div className="content-rect" style={{ backgroundColor: "rgb(244, 236, 230)" }}>
 
