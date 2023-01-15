@@ -4,9 +4,44 @@ import { faSquareFull } from '@fortawesome/free-solid-svg-icons'
 import Tile from '../components/Tile'
 
 export default function Resume() {
-    const tile1 = Tile('2021-2022', "Freelancer", "Weblancer", "Online");
-    const tile2 = Tile('2015-2020', "Manas-Ata", "Secondary School", "Talas, Kyrgyzstan");
-    const tile3 = Tile('2022-Present', "Vistula University", "Bachelors", "Warsaw, Poland");
+    const tile1 = {
+        date: '2021-2022',
+        name: "Freelancer",
+        position: "Weblancer",
+        location: "Online",
+        description:
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur tempus eleifend leo ut pulvinar.
+        Morbi efficitur posuere malesuada. Aenean venenatis
+        rutrum nulla, et mollis justo fermentum hendrerit.
+        `
+    };
+    const tile2 = {
+        date: '2015-2020',
+        name: "Manas-Ata",
+        position: "Secondary School",
+        location: "Talas, Kyrgyzstan",
+        description:
+        `
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur tempus eleifend leo ut pulvinar.
+        Morbi efficitur posuere malesuada. Aenean venenatis
+        rutrum nulla, et mollis justo fermentum hendrerit.
+        `
+    };
+    const tile3 = {
+        date: '2022-Present',
+        name: "Vistula University",
+        position: "Bachelors",
+        location: "Warsaw, Poland",
+        description: 
+        `
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur tempus eleifend leo ut pulvinar.
+        Morbi efficitur posuere malesuada. Aenean venenatis
+        rutrum nulla, et mollis justo fermentum hendrerit.
+        `
+    };
     return (
         <div className="resume">
             <div className="title"> <FontAwesomeIcon icon={faSquareFull} color="blue" /> Resume </div>
@@ -15,15 +50,15 @@ export default function Resume() {
                 <button className="download">DOWNLOAD CV</button>
             </div>
 
-            {tile1}
+            {<Tile values={tile1} />}
 
             <div style={{ width: "90vw", maxWidth: "730px", marginTop: "60px", marginBottom: "40px" }}>
                 <p className="education">Education</p>
             </div>
 
-            {tile2}
+            {<Tile values={tile2} />}
 
-            {tile3}
+            {<Tile values={tile3} />}
 
             <div className="skillset">
                 <div>

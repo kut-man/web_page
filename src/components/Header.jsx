@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareFull } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
-import Burger from './Burger';
 
 export default function Header() {
+    const [navbarState, setNavbarState] = useState({
+        burger: "",
+        listContainer: ""
+    });
+    const [isOpen, setIsOpen] = useState(false)
 
-    function closeMenu() {
-        document.querySelector('.list-container').classList.remove("appearance");
-        document.querySelector('.burger').classList.remove("animation")
+    function handleClick(toOpen) {
+        setNavbarState(toOpen ? { burger: 'animation', listContainer: 'appearance' }
+        : {burger: '', listContainer: ''});
     }
 
     return (
@@ -19,14 +23,20 @@ export default function Header() {
                     <span className="job"> / STUDENT</span>
                 </Link>
 
-                <Burger />
+                <div className={`burger ${navbarState.burger}`} onClick={() => {
+                    setIsOpen(!isOpen)
+                    handleClick(isOpen)}}>
+                    <div className="rec-1"></div>
+                    <div className="rec-2"></div>
+                    <div className="rec-3"></div>
+                </div>
 
-                <div className={'list-container'}>
+                <div className={`list-container ${navbarState.listContainer}`}>
                     <ul>
-                        <Link onClick={closeMenu} to='/'>ABOUT ME</Link>
-                        <Link onClick={closeMenu} to='/resume'>RESUME</Link>
-                        <Link onClick={closeMenu} to='/projects'>PROJECTS</Link>
-                        <Link onClick={closeMenu} to='/contact'>CONTACT</Link>
+                        <Link onClick={() => handleClick(false)} to='/'>ABOUT ME</Link>
+                        <Link onClick={() => handleClick(false)} to='/resume'>RESUME</Link>
+                        <Link onClick={() => handleClick(false)} to='/projects'>PROJECTS</Link>
+                        <Link onClick={() => handleClick(false)} to='/contact'>CONTACT</Link>
                     </ul>
                 </div>
 
