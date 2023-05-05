@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function ButtonContainer(props) {
+export default function ButtonContainer({className}) {
     return (
-        <div className={props.className}>
-            <button style={{ padding: "5px 30px 5px 30px", margin: "30px 20px 50px 0" }} onClick={() => window.location.href = '/#/resume'}>RESUME</button>
-            <button style={{ padding: "5px 22px 5px 22px" }} onClick={() => window.location.href = '/#/projects'}>PROJECTS</button>
+        <div className={className}>
+            <Link to='/resume'>RESUME</Link>
+            <Link to='/projects'>PROJECTS</Link>
         </div>
     )
 }
