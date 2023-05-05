@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareFull } from '@fortawesome/free-solid-svg-icons'
 import Tile from '../components/Tile'
+import { useRef } from 'react'
 
 export default function Resume() {
     const tile1 = {
@@ -10,7 +11,7 @@ export default function Resume() {
         position: "Weblancer",
         location: "Online",
         description:
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Curabitur tempus eleifend leo ut pulvinar.
         Morbi efficitur posuere malesuada. Aenean venenatis
         rutrum nulla, et mollis justo fermentum hendrerit.
@@ -22,7 +23,7 @@ export default function Resume() {
         position: "Secondary School",
         location: "Talas, Kyrgyzstan",
         description:
-        `
+            `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Curabitur tempus eleifend leo ut pulvinar.
         Morbi efficitur posuere malesuada. Aenean venenatis
@@ -34,20 +35,28 @@ export default function Resume() {
         name: "Vistula University",
         position: "Bachelors",
         location: "Warsaw, Poland",
-        description: 
-        `
+        description:
+            `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Curabitur tempus eleifend leo ut pulvinar.
         Morbi efficitur posuere malesuada. Aenean venenatis
         rutrum nulla, et mollis justo fermentum hendrerit.
         `
     };
+
+    const link = useRef()
+
+    const downloadPdf = () => {
+        link.click();
+    };
+
     return (
         <div className="resume">
             <div className="title"> <FontAwesomeIcon icon={faSquareFull} color="blue" /> Resume </div>
             <div style={{ width: "90vw", maxWidth: "730px", height: "200px" }}>
                 <p className="experience" style={{ marginTop: "100px" }}>Experince</p>
-                <button className="download">DOWNLOAD CV</button>
+                <button onClick={downloadPdf} className="download">DOWNLOAD CV</button>
+                <a style={{display: "none"}} ref={link} download href='https://github.com/kut-man/web_page/files/11408466/CV.Kutman.Eshenkulov.pdf'/>
             </div>
 
             {<Tile values={tile1} />}
