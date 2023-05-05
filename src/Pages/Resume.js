@@ -47,7 +47,7 @@ export default function Resume() {
     const link = useRef()
 
     const downloadPdf = () => {
-        link.click();
+        link.current.click();
     };
 
     return (
@@ -56,7 +56,7 @@ export default function Resume() {
             <div style={{ width: "90vw", maxWidth: "730px", height: "200px" }}>
                 <p className="experience" style={{ marginTop: "100px" }}>Experince</p>
                 <button onClick={downloadPdf} className="download">DOWNLOAD CV</button>
-                <a style={{display: "none"}} ref={link} download href='https://github.com/kut-man/web_page/files/11408466/CV.Kutman.Eshenkulov.pdf'/>
+                <a style={{display: "none"}} ref={link} download href='https://github.com/kut-man/web_page/files/11408466/CV.Kutman.Eshenkulov.pdf'>Download</a>
             </div>
 
             {<Tile values={tile1} />}
