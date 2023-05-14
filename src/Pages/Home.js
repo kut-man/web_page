@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faPinterest } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faFacebook, faPinterest, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import ButtonContainer from '../components/ButtonContainer';
 
 export default function Home() {
@@ -22,15 +22,14 @@ export default function Home() {
 
                     <ButtonContainer className="content-button" />
 
-                    <h2>STUDENT</h2>
+                    <h2>SOFTWARE ENGINEER</h2>
 
                     <div className="content-contact">
                         <ul className='mt-2'>
-                            <li>
-                                <a href="https://www.instagram.com/_.kutman/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
-                                <a href="https://www.pinterest.com/kutmanesenkulov/_saved/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPinterest} /></a>
-                                <a href="https://www.facebook.com/kutman.eshenkulov.50/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
-                            </li>
+                            <a href="https://www.instagram.com/_.kutman/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
+                            <a href="https://www.pinterest.com/kutmanesenkulov/_saved/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPinterest} /></a>
+                            <a href="https://www.facebook.com/kutman.eshenkulov.50/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
+                            <a href="https://www.linkedin.com/in/kutman-eshenkulov-186842233/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
                         </ul>
                     </div>
 

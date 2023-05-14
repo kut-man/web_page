@@ -14,8 +14,7 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('service_pdwvf9a', 'template_41ht47e', e.target, 'user_gbguGQSWNN1nYTouV1Kx3')
+        emailjs.sendForm('service_pdwvf9a', 'template_e9pba1p', e.target, 'user_gbguGQSWNN1nYTouV1Kx3')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
