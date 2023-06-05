@@ -6,8 +6,8 @@ import Project from '../components/Project'
 const projects = [
     {
         id: 1,
-        projectName: 'Project name 01',
-        role: 'Role Title',
+        projectName: 'HodlHub',
+        role: 'Crypto Asset Manager',
         description: `I'm a paragraph. Click here to add your own text and edit me.
                     It’s easy. Just click “Edit Text” or double click me to add
                     your own content and make changes to the font. I’m a great
@@ -17,8 +17,8 @@ const projects = [
     },
     {
         id: 2,
-        projectName: 'Project name 02',
-        role: 'Role Title',
+        projectName: 'Ryder',
+        role: 'E-commerce',
         description: `I'm a paragraph. Click here to add your own text and edit me.
                     It’s easy. Just click “Edit Text” or double click me to add
                     your own content and make changes to the font. I’m a great
@@ -28,8 +28,8 @@ const projects = [
     },
     {
         id: 3,
-        projectName: 'Project name 03',
-        role: 'Role Title',
+        projectName: 'Kutman',
+        role: 'Personal Project',
         description: `I'm a paragraph. Click here to add your own text and edit me.
                     It’s easy. Just click “Edit Text” or double click me to add
                     your own content and make changes to the font. I’m a great

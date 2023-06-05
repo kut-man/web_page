@@ -6,28 +6,27 @@ import { useRef } from 'react'
 
 export default function Resume() {
     const tile1 = {
-        date: '2021-2022',
-        name: "Freelancer",
-        position: "Weblancer",
-        location: "Online",
-        description:
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur tempus eleifend leo ut pulvinar.
-        Morbi efficitur posuere malesuada. Aenean venenatis
-        rutrum nulla, et mollis justo fermentum hendrerit.
+        date: '2023-2024',
+        name: "Dynatrace",
+        position: "Software Engineer (Internship)",
+        location: "Gdańsk",
+        description:`         
+            I gained valuable industry exposure, worked with a talented team, and 
+            enhanced my technical skills. The collaborative and inclusive environment, 
+            along with access to cutting-edge technologies, made it a rewarding experience. 
+            I am grateful for the opportunity and the foundation it has provided for my future career.
         `
     };
     const tile2 = {
-        date: '2015-2020',
-        name: "Manas-Ata",
-        position: "Secondary School",
-        location: "Talas, Kyrgyzstan",
-        description:
-            `
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur tempus eleifend leo ut pulvinar.
-        Morbi efficitur posuere malesuada. Aenean venenatis
-        rutrum nulla, et mollis justo fermentum hendrerit.
+        date: '2020-2022',
+        name: "Ala-Too International University",
+        position: "Bachelors",
+        location: "Bishkek, Kyrgyzstan",
+        description:`       
+            You acquired diverse academic experiences and essential skills. 
+            However, you chose to transfer to a different country, showing your 
+            unwavering commitment to pursue better educational opportunities. 
+            Your adaptability and dedication are evident in this decision.
         `
     };
     const tile3 = {
@@ -35,12 +34,11 @@ export default function Resume() {
         name: "Vistula University",
         position: "Bachelors",
         location: "Warsaw, Poland",
-        description:
-            `
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur tempus eleifend leo ut pulvinar.
-        Morbi efficitur posuere malesuada. Aenean venenatis
-        rutrum nulla, et mollis justo fermentum hendrerit.
+        description:`
+            I am gaining a strong foundation in both the theoretical 
+            and practical aspects of computing. Currently taking courses: 
+            Java Programming, Operating Systems, Architecture of Computers, 
+            Artificial Intelligence, Discrete Mathematics
         `
     };
 

@@ -10,31 +10,31 @@ export default function Home() {
             <div className="background-rect" style={{ backgroundColor: "rgb(230, 218, 206)" }}></div>
 
             <div className='content-container'>
-
-
                 <div className="content-rect" style={{ backgroundColor: "rgb(244, 236, 230)" }}>
-
                     <img src="https://drive.google.com/thumbnail?id=1n0JzkYsIJNvB_dUuAzxAJ9sCRBGl--NU" alt='' />
-
                     <h1>Kutman <br /> Eshenkulov</h1>
-
                     <div className="line"></div>
-
                     <ButtonContainer className="content-button" />
-
                     <h2>SOFTWARE ENGINEER</h2>
 
                     <div className="content-contact">
                         <ul className='mt-2'>
-                            <a href="https://www.instagram.com/_.kutman/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
-                            <a href="https://www.pinterest.com/kutmanesenkulov/_saved/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPinterest} /></a>
-                            <a href="https://www.facebook.com/kutman.eshenkulov.50/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
-                            <a href="https://www.linkedin.com/in/kutman-eshenkulov-186842233/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+                            <a href="https://www.instagram.com/_.kutman/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </a>
+                            <a href="https://www.pinterest.com/kutmanesenkulov/_saved/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faPinterest} />
+                            </a>
+                            <a href="https://www.facebook.com/kutman.eshenkulov.50/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faFacebook} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/kutman-eshenkulov-186842233/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faLinkedin} />
+                            </a>
                         </ul>
                     </div>
 
                 </div>
-
                 <div className="content">
 
                     <h1>
