@@ -8,7 +8,7 @@ export default function Resume() {
     const tile1 = {
         date: '2023-2024',
         name: "Dynatrace",
-        position: "Software Engineer (Internship)",
+        position: "Software Engineer Intern",
         location: "Gdańsk",
         description:`         
             I gained valuable industry exposure, worked with a talented team, and 
@@ -19,21 +19,21 @@ export default function Resume() {
     };
     const tile2 = {
         date: '2020-2022',
-        name: "Ala-Too International University",
+        name: "Ala-Too University",
         position: "Bachelors",
-        location: "Bishkek, Kyrgyzstan",
+        location: "Bishkek",
         description:`       
-            You acquired diverse academic experiences and essential skills. 
-            However, you chose to transfer to a different country, showing your 
+            Acquired diverse academic experiences and essential skills. 
+            However, chose to transfer to a different country, showing my 
             unwavering commitment to pursue better educational opportunities. 
-            Your adaptability and dedication are evident in this decision.
+            My adaptability and dedication are evident in this decision.
         `
     };
     const tile3 = {
         date: '2022-Present',
         name: "Vistula University",
         position: "Bachelors",
-        location: "Warsaw, Poland",
+        location: "Warsaw",
         description:`
             I am gaining a strong foundation in both the theoretical 
             and practical aspects of computing. Currently taking courses: 
