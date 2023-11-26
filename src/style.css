@@ -103,7 +103,6 @@ body {
 .burger.animation .rec-1 {
     background-color: black;
     transform: rotateZ(45deg) translate(10px, 7px);
-    ;
     transition: 0.5s;
 }
 

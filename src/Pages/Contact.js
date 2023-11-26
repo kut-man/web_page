@@ -3,15 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareFull } from '@fortawesome/free-solid-svg-icons'
 import emailjs from 'emailjs-com';
 
-const style = {
-    border: '1px solid black',
-    borderRadius: '100px',
-    background: 'transparent',
-    padding: "5px 30px 5px 30px"
-}
-
 export default function Contact() {
-
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_pdwvf9a', 'template_e9pba1p', e.target, 'user_gbguGQSWNN1nYTouV1Kx3')
@@ -21,6 +13,7 @@ export default function Contact() {
                 console.log(error.text);
             });
         e.target.reset()
+        alert("Message has been sent. Thank you!")
     };
 
     return (
@@ -41,16 +34,16 @@ export default function Contact() {
                     </div>
 
                     <h6>Email</h6>
-                    <input className='email-input' name='from_email'></input>
+                    <input required type='email' className='email-input' name='from_email'></input>
 
                     <h6>Subject</h6>
-                    <input className='subject-input' name='subject'></input>
+                    <input required type='text' className='subject-input' name='subject'></input>
 
                     <h6>Message</h6>
-                    <textarea className='message-text' name='message'></textarea>
+                    <textarea required type='text' className='message-text' name='message'></textarea>
 
-                    <input style={style} type="submit" value="Send" />
-
+                    <input className='contact-form-submit-input' type="submit" value="Send" />
+                   
                 </div>
             </div>
         </form>
